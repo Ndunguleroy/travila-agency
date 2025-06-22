@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GlobeTrek Adventures - Travel Destination Guide</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eef2f3;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      position: relative;
+      text-align: center;
+    }
+
+    header img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    section > p {
+      text-align: center;
+      color: #555;
+      font-size: 1.1em;
+      margin-bottom: 40px;
+    }
+
+    .attractions {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .attraction {
+      position: relative;
+      flex: 1 1 30%;
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+    }
+
+    .attraction:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .attraction img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: opacity 0.3s ease;
+    }
+
+    .attraction h3 {
+      margin: 15px 0 10px;
+      color: #1a1a1a;
+      font-size: 1.2em;
+    }
+
+    .attraction p {
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: opacity 0.4s ease, max-height 0.4s ease;
+      color: #444;
+      font-size: 0.95em;
+    }
+
+    .attraction:hover p {
+      opacity: 1;
+      max-height: 200px;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      border-top: 1px solid #ccc;
+      margin-top: 40px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://i.pinimg.com/736x/b1/86/0b/b1860bd21e0a727f5a6e15c912aa60ee.jpg" alt="Exotic beach destination">
+  </header>
+
+  <main>
+    <section>
+      <h2>Discover the Magic of Bali</h2>
+      <p>Welcome to your dream getaway. From breathtaking beaches to vibrant cultural experiences, Bali has everything to offer.</p>
+    </section>
+
+    <section class="attractions">
+      <div class="attraction">
+        <img src="https://i.pinimg.com/736x/e3/49/5d/e3495dac10cee97a5d172b054905e0ef.jpg" alt="Bali temple at sunset">
+        <h3>Uluwatu Temple</h3>
+        <p>Witness dramatic cliffside views and experience traditional Kecak dance performances during sunset.</p>
+      </div>
+
+      <div class="attraction">
+        <img src="https://i.pinimg.com/736x/97/dc/19/97dc191f0df194438fb6bff5598d99d1.jpg" alt="Tegallalang rice terraces in Bali">
+        <h3>Rice Terraces</h3>
+        <p>Walk through the stunning Tegallalang rice terraces and connect with Bali's rich agricultural heritage.</p>
+      </div>
+
+      <div class="attraction">
+        <img src="https://i.pinimg.com/736x/97/9f/d4/979fd4bcdf91594c8de678836f7457e8.jpg" alt="Bali beach with surfers">
+        <h3>Kuta Beach</h3>
+        <p>Perfect waves and golden sand await. A haven for surfers and beach lovers alike.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 GlobeTrek Adventures | Your Journey Begins Here
+  </footer>
+
+</body>
+</html>
